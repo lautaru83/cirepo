@@ -22,7 +22,7 @@
                 <div class="row align-items-center h-100">
                     <div class="card o-hidden border-0 shadow-lg my-5">
                         <div class="card-body">
-                            <h3>Sign In</h3>
+                            <h3>Sign In Please</h3>
                         </div>
                         <div class="card-body">
                             <form method="post" action="<?= base_url('auth') ?>">
