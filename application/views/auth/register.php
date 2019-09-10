@@ -1,17 +1,29 @@
 <div class="container">
     <div class="d-flex justify-content-center h-100">
-        <div class="row align-items-center h-100">
+        <div class="col-lg-7">
             <div class="card o-hidden border-0 shadow-lg my-5">
                 <div class="card-body">
-                    <h3>Sign In Please</h3>
+                    <h3>Sign Up</h3>
                 </div>
                 <div class="card-body">
-                    <form method="post" action="<?= base_url('auth') ?>">
+                    <form method="post" action="<?= base_url('auth/register') ?>">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+                            </div>
+                            <input type="text" name="nama" autocomplete="off" class="form-control" placeholder="Nama">
+                        </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
                             </div>
                             <input type="text" name="userid" autocomplete="off" class="form-control" placeholder="username">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+                            </div>
+                            <input type="text" name="email" autocomplete="off" class="form-control" placeholder="email">
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
@@ -26,10 +38,7 @@
                 </div>
                 <div class="card-body">
                     <div class="d-flex justify-content-center links">
-                        Belum memiliki akun?<a href="<?= base_url('Auth/register') ?>">Sign Up</a>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <a href="#">Lupa password anda?</a>
+                        Telah memiliki akun?<a href="<?= base_url('Auth') ?>">Sign In</a>
                     </div>
                 </div>
             </div>
